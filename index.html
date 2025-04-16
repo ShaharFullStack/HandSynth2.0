@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="styles.css">
+  <title>HandSynth - Gesture Musical Instrument</title>
+  
+  <!-- MediaPipe dependencies -->
+  <script src="https://cdn.jsdelivr.net/npm/@mediapipe/camera_utils/camera_utils.js" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@mediapipe/control_utils/control_utils.js" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@mediapipe/drawing_utils/drawing_utils.js" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@mediapipe/hands/hands.js" crossorigin="anonymous"></script>
+  
+  <!-- Tone.js for audio synthesis -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/tone/14.8.49/Tone.js"></script>
+  
+  <!-- Font -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600&family=Martian+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+  
+  <!-- Meta data -->
+  <meta name="description" content="HandSynth - A gesture-based musical instrument using hand tracking technology">
+  <meta name="keywords" content="music, hands, gestures, instrument">
+  
+  <!-- Open Graph / Social Media -->
+  <meta property="og:title" content="HandSynth">
+  <meta property="og:description" content="Make music with your hands using gesture recognition">
+  <meta property="og:type" content="website">
+  
+  <!-- Main application script -->
+  <script type="module" src="src/index.js"></script>
+</head>
+<body>
+  <!-- Loading screen -->
+  <div id="loading" class="loading-overlay">
+    <div class="spinner"></div>
+    <div class="loading-text">Loading HandSynth...</div>
+  </div>
+</body>
+</html>
